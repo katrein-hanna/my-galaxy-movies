@@ -31,11 +31,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between bg-primary/25 backdrop-blur-[10px] px-30 shadow-lg shadow-bright/25 ">
           {/* Logo section */}
 
-          <img src={logo} alt="" className="w-60 " />
+          <img src={logo} alt="" className="w-55 h-25 object-contain " />
 
           {/* Menu section */}
           <div className=" md:block hidden mt-2">
-            <ul className="flex justify-between items-center gap-5">
+            <ul className="flex justify-between items-center gap-10 font-medium">
               {menuItems.map((item) => (
                 <li key={item.id}> {item.name} </li>
               ))}
