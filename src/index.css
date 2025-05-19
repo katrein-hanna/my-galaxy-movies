@@ -59,11 +59,39 @@ body {
 }
 
 body {
-  background: url("./assets/bg9.jpg") no-repeat center center / cover;
+  background: var(--color-primary);
   color: #ffffff;
   height: 100%; /* Full viewport height */
   background-attachment: fixed; /* Optional for a parallax effect */
 
   font-family: var(--font-base);
   font-weight: 700;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 5s ease-in-out infinite;
 }
