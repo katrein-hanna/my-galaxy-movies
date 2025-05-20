@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Twinkling stars background */}
       <div className="absolute inset-0 bg-[url('/stars.png')] bg-repeat opacity-10 pointer-events-none z-0  animate-twinkle" />
 
-      <section className="container mx-auto relative w-full min-h-[90vh] flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-10  text-bright overflow-hidden">
+      <section className="container mx-auto relative w-full flex flex-col md:flex-row items-center justify-between px-8 md:px-20   text-bright overflow-hidden ">
         <div className="z-10 max-w-xl space-y-5">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Explore Your <span className="text-glowing">Movie Universe</span>
